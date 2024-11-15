@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-image: url(images/bg.jpg);
+  background-size: 100% 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-container {
+  background-color: #121826a6;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px rgba (0, 0, 0, 0.2);
+  padding: 20px;
+  width: 360px;
+  height: 550px;
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.image-container img {
+  border-radius: 16px;
+  justify-content: center;
+  width: inherit;
+  height: 100%;
+  object-fit: cover;
+}
+
+.music-info {
+  text-align: center;
+  gap: 15px;
+  color: #e5e7eb;
+}
+.music-info h1,
+h3 {
+  margin: 0;
+}
+
+.music-info h1 {
+  font-weight: 600;
+  font-size: 16px;
+}
+.music-info h3 {
+  color: #4d5562;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  gap: 20px;
+}
+
+.action-btn {
+  cursor: pointer;
+}
+#prev,
+#next {
+  background-color: transparent;
+  border: none;
+}
+
+#play {
+  background-color: #c93b76;
+  border-color: transparent;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  box-shadow: rgba(201, 59, 118, 1) 0 1px 8px;
+}
+
+.progress-container {
+  background-color: #e5e7eb;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 4px;
+  width: 100%;
+  margin: 10px 0px 20px;
+}
+
+.progress {
+  background-color: #c93b76;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #4d5562;
+  font-size: 12px;
+}
+

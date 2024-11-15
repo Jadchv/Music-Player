@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="music-container ">
+      <div class="image-container">
+        <img src="images/gladiator.png" alt="music-cover" id="cover" />
+      </div>
+      <div class="music-info">
+        <h1 id="title">Gladiator</h1>
+        <h3 id="author"> Elarion Ambients</h3>
+        <div class="time">
+        <span class="current-time">0:00</span>
+        <span class="duration ">0:00</span>
+    </div>
+        <div class="progress-container">
+            
+          <div class="progress"></div>
+          
+     </div>
+     
+      </div>
+      <audio src="music/gladiator.mp3" id="audio"></audio>
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <img
+            class="backward"
+            src="images/Stop_and_play_fill-1.svg"
+            alt="icon-backward"
+          />
+        </button>
+        <button id="play" class="action-btn ">
+          <img class="icon-play" src="images/Play_fill.svg" alt="icon-play" />
+         
+
+        </button>
+        <button id="next" class="action-btn">
+          <img class="forward" src="images/Stop_and_play_fill.svg" alt="icon-forward" />
+        </button>
+       
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
